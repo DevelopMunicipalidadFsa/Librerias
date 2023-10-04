@@ -1,14 +1,10 @@
 .boldNo {
     font-weight: 0 !important;
 }
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');*/
-/* background: linear-gradient(to bottom, #0b3857, #054b79); */
-@font-face {
-    font-family: 'Montserrat'!important;
-    src: url('../font/Montserrat/Montserrat-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+ 
+  
   :root{
     /*--fuente: 'Montserrat', sans-serif;*/
     /* --ancho-contenedor: 1200px; */
@@ -61,6 +57,9 @@
     --purple-5: #B670F7;
   }
   
+  *{
+    font-family: 'Montserrat', sans-serif;
+  }
   
   body {
     background: var(--blue-1);
