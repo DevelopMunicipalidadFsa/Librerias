@@ -10,6 +10,7 @@ function mo(){
     }
 }
 
+// Script para cargar nombre debajo del input de ususario en caso que exista
 $(document).ready(function () {
     $("#username").on("blur", function () {
       $("#resultadoUsuario")
@@ -31,4 +32,17 @@ $(document).ready(function () {
       });
     });
   });
+
+  // Data Table Lista Descargas
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "lengthChange": false, 
+      "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"],
+      "language": {
+        url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json',
+      },
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
   
+  });
