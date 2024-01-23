@@ -1,48 +1,79 @@
-/* script de login mostar oculltar contraseña y cambio de icono*/
-function mo(){
-    var cambio = document.getElementById("password");
-    if(cambio.type == "password"){
-        cambio.type = "text";
-        $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
-    }else{
-        cambio.type = "password";
-        $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+var ListaDescarga = document.getElementById("ListaDescarga");
+var CamionesActivosList = document.getElementById("CamionesActivosList");
+var CamionesInactivosList = document.getElementById("CamionesInactivosList");
+
+
+$(document).ready(function () {
+  $('#ListaDescarga').DataTable({
+    language: {
+      url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json'
     }
+  });
+});
+
+$(document).ready(function () {
+  $('#CamionesActivosList').DataTable({
+    language: {
+      url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json'
+    }
+  });
+});
+
+
+$(document).ready(function () {
+  $('#CamionesInactivosList').DataTable({
+    language: {
+      url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json'
+    }
+  });
+});
+
+
+
+// Data Table Lista Descargas
+// $(document).ready(function () {
+//   $("#ListaDescarga").DataTable({
+//     responsive: true,
+//     lengthChange: false,
+//     autoWidth: false,
+//     buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+//     language: {
+//       url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json'
+//     }
+//   }).buttons().container().appendTo('#ListaDescarga_wrapper .col-md-6:eq(0)');
+// });
+// $(document).ready(function () {
+//   $("#CamionesInactivosList").DataTable({
+//     responsive: true,
+//     lengthChange: false,
+//     autoWidth: false,
+//     buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+//     language: {
+//       url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json'
+//     }
+//   }).buttons().container().appendTo('#CamionesActivosList_wrapper .col-md-6:eq(0)');
+// });
+
+// $(document).ready(function () {
+//   $("#CamionesInactivosList").DataTable({
+//     responsive: true,
+//     lengthChange: false,
+//     autoWidth: false,
+//     buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+//     language: {
+//       url: 'https://cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json'
+//     }
+//   }).buttons().container().appendTo('#CamionesInactivosList_wrapper .col-md-6:eq(0)');
+// });
+
+// Funcion cerrar Session cuando se cierra la ultima pestaña del sistema
+function cerrarSession() {
+  // llamamos al archivo cerrarSesion para romper la misma
+  $.ajax({
+    url: "cerrarSesion.php",
+    success: function () {
+      alert("Session finalizada");
+    }
+  });
 }
 
-// Script para cargar nombre debajo del input de ususario en caso que exista
-$(document).ready(function () {
-    $("#username").on("blur", function () {
-      $("#resultadoUsuario")
-        .html(
-          '<img class="Gifcargando" src="../Librerias/img/loading.gif" width="30px" height="30px"/>'
-        )
-        .fadeOut(100);
-  
-      var username = $(this).val();
-      var dataString = "username=" + username;
-  
-      $.ajax({
-        type: "POST",
-        url: "ajax/validarUsuarioLogin.php",
-        data: dataString,
-        success: function (data) {
-          $("#result-username").fadeIn(1000).html(data);
-        },
-      });
-    });
-  });
-
-  // Data Table Lista Descargas
-  $(function () {
-    $("#example1").DataTable({
-      "responsive": true,
-      "lengthChange": false, 
-      "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"],
-      "language": {
-        url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json',
-      },
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-  
-  });

@@ -1,0 +1,183 @@
+/* #Ajuste {
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+  background: #ebebeb !important;
+  height: 92.5vh !important;
+} */
+
+/* NAVEGADOR */
+/* PANTALLA GRANDE */
+@media screen and (min-width: 992px) {
+  .navbar .container-fluid,
+  .navbar-expand-lg .navbar-collapse,
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vistaModulos {
+    /* max-height: 90.5vh !important; */
+    overflow-y: auto !important;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .navV {
+    width: 100%;
+    height: 91.6vh !important;
+    /* height: 100% !important; */
+    /* padding: 7px 3px; */
+    align-items: flex-start;
+  }
+  .navbar-brand {
+    margin-left: 0.5rem;
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+  .navH,
+  .imgBrand,
+  .titleHMunicipalidad,
+  .titleHGestion {
+    display: none;
+  }
+
+  .titleVMunicipalidad,
+  .titleVGestion {
+    display: block !important;
+    color: white !important;
+  }
+
+  .btnResponsive {
+    background: white !important;
+  }
+
+  button.navbar-toggler img {
+    width: 30px; /* Establece el ancho de la imagen */
+    height: 30px; /* Establece la altura de la imagen */
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.3em;
+}
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.accordion .accordion-item {
+  margin-top: 10px;
+  background: transparent !important;
+  border: none;
+}
+
+.accordion-header {
+  /* background: #06283d; */
+  /* color: white; */
+  border-radius: 4px !important;
+  font-weight: bold;
+}
+
+.accordion-header:hover {
+  background: #2d87be !important;
+  color: #06283d !important;
+  transition: ease all 0.5s;
+  /* border-left: solid 2px white; */
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../Img/arrowWhite.png);
+  transform: rotate(-180deg);
+}
+
+.accordion-button {
+  background: #06283d !important;
+  color: white !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+.accordion-button:hover {
+  background: #21648d !important;
+  color: white !important;
+  transition: ease all 0.5s;
+}
+
+.accordion-button:focus {
+  border-radius: 4px !important;
+  background: #005285 !important;
+  color: white !important;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url(../Img/arrowWhite.png);
+}
+
+.btn-nav {
+  border-radius: 5px !important;
+  color: white !important;
+}
+
+.btn-nav::after {
+  background-image: none !important;
+}
+
+.accordion-body .nav-link {
+  text-align: left !important;
+  /* margin: 3px !important; */
+  margin-top: 4px !important;
+  background: #07202f;
+  /* background: linear-gradient(90deg, #22c317 35%, #1b5317 100%) !important; */
+  border-radius: 5px !important;
+  padding: 10px !important;
+}
+
+.accordion-body .nav-link:hover {
+  background: #005285;
+}
+
+.imgBrand {
+  width: 150px;
+  padding-right: 10px;
+  border-right: solid 2px white;
+  text-shadow: 2px 2px 2px white;
+}
+
+.titleHMunicipalidad {
+  font-size: 16px !important;
+  font-weight: 0 !important;
+  color: white !important;
+}
+.titleHGestion {
+  font-size: 13px !important;
+  color: white !important;
+}
+
+.CloseSess {
+  width: 100% !important;
+  background: #d12e2e !important;
+  text-decoration: none;
+  color: white !important;
+  font-weight: bold !important;
+  border: none !important;
+}
+
+.CloseSess:hover {
+  width: 100% !important;
+  background: #f01515 !important;
+}
+
+.custom-button-class::after {
+  display: none;
+}

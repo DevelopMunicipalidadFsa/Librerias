@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.back-blue {
+  background: #0b3857;
+}
+
+.t-color-blue {
+  color: #0b3857 !important;
+}
+
+.campo-incompleto {
+  border: 1px solid #d23c3c !important;
+}
+
+.campo-completo {
+  border: 1px solid #128f16 !important;
+}
+
+.form-floating-css input {
+  background: #ebf5fb !important;
+  border: none !important;
+  border-bottom: solid 2px #154360 !important;
+  border-radius: 0px !important;
+  font-weight: bold !important;
+  font-size: 11px !important;
+}
+
+.form-floating-css input:disabled {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: solid 2px #154360 !important;
+  border-radius: 0px !important;
+  font-weight: bold !important;
+  font-size: 11px !important;
+}
+
+.form-floating-css textarea:disabled {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: solid 2px #154360 !important;
+  border-radius: 0px !important;
+  font-weight: bold !important;
+  font-size: 11px !important;
+}
+
+.form-floating-css textarea {
+  background: #ebf5fb !important;
+  border: none !important;
+  border-bottom: solid 2px #154360 !important;
+  border-radius: 0px !important;
+  font-weight: bold !important;
+}
+
+.form-floating-css > .form-control:disabled ~ label::after,
+.form-floating-css > :disabled ~ label::after {
+  background-color: #ebf5fb !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  color: #0b3857 !important;
+}
+
+.form-floating-css > label::after,
+.form-floating-css > :disabled ~ label::after {
+  background-color: #ebf5fb !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  color: #0b3857 !important;
+}
+
+.form-floating-css-select select {
+  background: #ebf5fb !important;
+  color: #0b3857 !important;
+  border-radius: 0px !important;
+  border-bottom: solid 2px #0b3857 !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+}
+
+.form-floating-css-select select option {
+  color: #0b3857 !important;
+  font-weight: bold !important;
+  font-size: 15px;
+}
+
+.form-floating-css-select > label::after,
+.form-floating-css-select > :disabled ~ label::after {
+  background-color: #ebf5fb !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  color: #0b3857 !important;
+}
+
+#CamionesActivosList th {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  /* padding: 7px !important; */
+}
+
+#CamionesActivosList td {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 5px !important;
+}
+
+#ListaDescarga th {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  /* padding: 7px !important; */
+  text-align: center !important;
+}
+
+#ListaDescarga td {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 5px !important;
+}
+
+#tablaBarriosPorZonas th {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  /* padding: 7px !important; */
+  text-align: center !important;
+}
+
+#tablaBarriosPorZonas td {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding: 5px !important;
+}
+
+/* sadsad */

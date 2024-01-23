@@ -1,5 +1,18 @@
-.badge{
-    height:20px;
-    width: 120px;
-    vertical-align: middle;
+.badge {
+  height: 20px;
+  width: 120px;
+  vertical-align: middle;
+}
+
+.btnDetalleServicio {
+  color: #4969c2 !important;
+  border: 0px !important;
+  background: transparent !important;
+  padding: 0px !important;
+  font-size: 15px !important;
+}
+
+.btnDetalleServicio:hover {
+  color: #143183 !important;
+  /* text-shadow: 1px 1px 10px silver !important; */
 }
